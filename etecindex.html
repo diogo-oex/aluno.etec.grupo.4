@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="formulario.css"/>
+  <script src="script.js" defer></script>
+  <script src="senha.js" defer></script>
+  <script src="valida.js" defer></script>
+  <script src="deficiencia.js" defer></script>
+</head>
+<body>
+  <form action="#" method="post">
+    <h2>Cadastro</h2>
+    <h2>Dados pessoais</h2>
+      
+      <div class="grupo">
+        
+      <label for="nome">Nome completo:</label><br>
+      <input type="text" id="nome" name="nome" placeholder="digite seu nome" required>
+        
+      </div>
+      
+      <div class="grupo">
+        
+        <label for="nascimento">Data de nascimento:</label><br>
+        <input type="date" id="nascimento" name="nascimento" required>
+        
+      </div>
+      
+      <div class="grupo">
+        
+        <label for="genero">Gênero</label><br>
+        <select id="genero" name="genero" required>
+          <option value="masculino">masculino</option>
+          <option value="feminino">feminino</option>
+          <option value="intersexo">intersexo</option>
+          <option value="outro">outro</option>
+          <option value="prefNDizer">prefiro não dizer</option>
+        </select>
+        
+      </div>
+      
+      <div class="grupo">
+        
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="email" required>
+        
+        </div>
+      
+      <div class="grupo">
+        
+        <label for="tipo documento">Tipo documento:</label><br>
+        <select id="documento" name="documento" required>
+          <option value="rg">RG</option>
+        </select>
+        
+      </div>
+      
+      <h2>RG:</h2>
+      
+      <div class="grupo">
+        
+        <label for="numero">Número:</label><br>
+        <input type="text" id="numero" name="numero" required>
+        
+      </div>
+      
+      <div class="grupo">
+        
+        <label for="orgao">Orgão</label><br>
+        <input type="text" id="orgao" name="orgao" required>
+        
+      </div>
+      
+      <div class="grupo">
+        
+        <label for="uf">UF</label><br>
+        <select id="uf" name="uf" required>
+          <option value="ac">AC</option>
+          <option value="al">AL</option>
+          <option value="ap">AP</option>
+          <option value="am">AM</option>
+          <option value="ba">BA</option>
+          <option value="ce">CE</option>
+          <option value="df">DF</option>
+          <option value="es">ES</option>
+          <option value="go">GO</option>
+          <option value="ma">MA</option>
+          <option value="mt">MT</option>
+          <option value="ms">MS</option>
+          <option value="mg">MG</option>
+          <option value="pa">PA</option>
+          <option value="pb">PB</option>
+          <option value="pr">PR</option>
+          <option value="pe">PE</option>
+          <option value="pi">PI</option>
+          <option value="rj">RJ</option>
+          <option value="rs">RS</option>
+          <option value="ro">RO</option>
+          <option value="rr">RR</option>
+          <option value="sc">SC</option>
+          <option value="sp">SP</option>
+          <option value="se">SE</option>
+          <option value="to">TO</option>
+        </select>
+      </div>
+      
+    <div class="grupo">
+      
+      <h2>DEFICIÊNCIA</h2>
+      
+      <label for="deficiencia">Possui alguma deficiência?</label><br>
+      <select id="deficiencia" name="deficiencia" required>
+        <option value="nao">Não</option>
+        <option value="auditiva_leve">Auditiva - Leve</option>
+        <option value="visual_baixa">Visual - Baixa Visão</option>
+        <option value="intelectual_leve">Intelectual - Leve</option>
+        <option value="fisica_amputado">Física - Amputado</option>
+        <option value="auditiva_moderada">Auditiva - Moderada</option>
+        <option value="auditiva_Severa">Auditiva - Severa</option>
+        <option value="auditiva_profunda">Auditiva - Profunda</option>
+        <option value="intelectual_moderada">Intelectual - Moderada</option>
+        <option value="intelectual_severa">Intelectual - Severa</option>
+        <option value="tra_esp_apre">Transtorno Especifíco da Aprendizagem</option>
+        <option value="tdah_leve">TDAH - Leve</option>
+        <option value="tdah_moderado">TDAH - Moderado</option>
+        <option value="tdah_severo">TDAH - Severo</option>
+        <option value="tea_1">Transtorno do Espectro Autista - Nível 1</option>
+        <option value="tea_2">Transtorno do Espectro Autista - Nível 2</option>
+        <option value="tea_3">Transtorno do Espectro Autista - Nível 3</option>
+        <option value="down">Síndrome de Down</option>
+        <option value="multiplas">Múltiplas</option>
+        <option value="fisica_cerebral">Física - Paralisia Cerebral</option>
+        <option value="fisica_hemiplegia">Física - Hemiplegia</option>
+        <option value="fisica_hemiparesia">Física - Hemiparesia</option>
+        <option value="fisica_monoplegia">Física - Monoplegia</option>
+        <option value="fisica_monoparesia">Física - Monoparesia</option>
+        <option value="fisica_paraplegia">Física - Paraplegia</option>
+        <option value="fisica_paraparesia">Física - Parararesia</option>
+        <option value="fisica_tetraplegia">Física - Tetraplegia</option>
+        <option value="fisica_monocular">Física - Monocular</option>
+        <option value="visual_cego">Visual - Cego</option>
+        <option value="vi/ce_surdocegueira">Visual/Cego - Surdocegueira</option>
+        <option value="outras">Outras</option>
+      </select>
+    </div>
+    
+      <div class="grupo descricao-deficiencia">
+  <label for="descricao">Descrição:</label><br>
+  <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea>
+</div>
+    
+    <h2>DADOS ADICIONAIS</h2>
+    
+    <div class="grupo">
+      
+      <label for="estado_civil" >Estado Civil</label><br>
+      <select id="estado_civil" name="estado_civil" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="solteiro">Solteiro(a)</option>
+        <option value="casado">Cadado(a)</option>
+        <option value="separado-desquitado-divorciado">Separado(a)/desquitado(a)/divorciado(a)</option>
+        <option value="viuvo">Viúvo(a)</option>
+        <option value="outro">Outro</option>
+      </select>
+      
+    </div>
+      
+      <div class="grupo">
+        
+      <label for="escolaridade">Escolaridade</label><br>
+      <select id="escolaridade" name="escolaridade" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="nenhuma-escolaridade">Nenhuma Escolaridade</option>
+        <option value="elementar">Elementar</option>
+        <option value="fundamental-incompleto">Fundamental Incompleto</option>
+        <option value="ensino-fundamental">Ensino fundamental</option>
+        <option value="ensino-medio">Ensino médio</option>
+        <option value="ensino-superior">Ensino superior</option>
+        <option value="pos-graduacao">Pós-Graduação</option>
+        <option value="mestrado">Mestrado</option>
+        <option value="doutorado">Doutorado</option>
+        <option value="pos-doutorado">Pós-doutorado</option>
+      </select>
+        
+      </div>
+        
+      <div class="grupo">
+        
+      <label for="nome_mae">Nome da mãe:</label><br>
+      <input type="text" id="nome_mae" name="nome_mae" required>
+        
+      </div>
+      
+      <div class="grupo">
+        
+      <label for="nacionalidade">Nacionalidade:</label><br>
+      <input type="text" id="nacionalidade" name="nacionalidade" required>
+        
+      </div>
+      
+      <div class="grupo"></div>
+      
+      <label for="naturalidade_cidade">Naturalidade - Cidade:</label><br>
+      <input type="text" id="naturalidade_cidade" name="naturalidade_cidade" required>
+      
+    </div>
+      
+    <div class="grupo">
+      
+      <label for="naturalidade_estado">Naturalidade - Estado</label><br>
+      <input type="text" id="naturalidade_estado" name="naturalidade_estado" required>
+      
+    </div>
+    
+    <div class="grupo">
+      
+      <label for="nome_representante">Nome do Representante Legal (Se menor de 16 anos):</label><br>
+      <input type="text" id="nome_representante" name="nome_representante" required>
+      
+    </div>
+    
+    <div class="grupo">
+      
+      <label for="cpf_representante">CPF do Representante Legal (Obrigatório caso canditado seja menor de 16 anos):</label><br>
+      <input type="text" id="cpf_representante" name="cpf_representante" required>
+      
+    </div>
+    
+  <h2>ENDEREÇO E CONTATO</h2>
+  
+    <div class="grupo">
+
+        <label for="text">CEP:</label><br>
+        <input type="text" name="CEP" inputmode="numeric" maxlength="8" required>
+      
+    <div>
+    
+    <div class="grupo">
+      
+        <label for="endereço">Endereço:</label><br>
+        <input type="text" name="endereço" required>
+      
+    </div>
+
+     <div class="grupo">
+       
+        <label for="número">Número:</label><br>
+        <input type="text" name="número" required>
+       
+    </div>
+
+     <div class="grupo">
+       
+        <label for="Complemento">complemento:</label><br>
+        <input type="text" name="complemento" required>
+       
+    </div>
+    
+    <div class="grupo">
+      
+        <label for="Bairro">bairro:</label><br>
+        <input type="text" name="bairro" required>
+      
+    </div>
+
+    <div class="grupo">
+      
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado" required>
+            <option disabled selected></option>
+            <option value="MT">MT</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+        </select>
+      
+    </div>
+
+    <div class="grupo">
+      
+    <label for="cidade">Cidade:</label><br>
+    <select id="cidade" required disabled>
+      <option value="">Selecione um estado primeiro</option>
+    </select>
+
+    </div>
+
+    <div class="grupo">
+      
+        <label for="Telefone">Telefone:</label><br>
+        <input type="text" name="telefone" maxlength="11" required>
+      
+    </div>
+
+    <div class="grupo">
+      
+        <label for="Celular">Celular:</label><br>
+        <input type="text" name="celular" maxlength="11" required>
+      
+    </div>
+      
+      <h2>SENHA DE ACESSO</h2>
+      
+      <div>
+        
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required>
+        
+      </div>
+      
+      <div class="grupo">
+        
+        <label for="confirmar">Repita a Senha:</label><br>
+        <input type="password" id="confirmar" name="confirmar" required>
+        
+      </div>
+      
+     <div class="grupo">
+       
+  <button type="submit">CONTINUAR</button>
+       
+</div>
+      
+      <p>ATENÇÃO: Sua senha deve conter no mínimo 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula, um número, e um dos seguintes caracteres especiais: @$!%*#?&<+>,.;</p>
+        
+      </form>
+</body>
+</html>
